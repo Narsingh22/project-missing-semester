@@ -1,0 +1,100 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #303030;
+    color: white;
+    font-family: "Source Sans Pro", sans-serif;
+    line-height: 1.2;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: #a6e22e;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: auto;
+    padding: 8px;
+    color: #303030;
+    letter-spacing: 1px;
+    font-weight: 700;
+    font-family: "Source Code Pro", 'Menlo', "DejaVu Sans Mono", "Lucida Console", monospace;
+}
+
+header nav li a{
+    color: black;
+    border-right: solid 2px rgba(0, 0, 0, 0.6);
+    padding: 0 12px;
+    font-size: 18px;
+}
+
+header nav li a:hover {
+    background-color: #fff;
+}
+
+main {
+    width: 62%;
+    margin: auto;
+    font-size: 16px;
+    position: relative;
+    top: 14px;
+}
+
+h1 {
+    font-size: 38px;
+}
+
+main p {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+a {
+    color: #66D9EF;
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: #66D9EF;
+    color: #000;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+ul li {
+    list-style-type: none;
+    font-size: 18px;
+}
+
+main ul li::before {
+    content: "-";
+    position: absolute;
+    left: 12px;
+}
+
+#class p {
+    line-height: .7;
+}
+
+hr {
+    width: 100%;
+    border-top: 2px solid #fff;
+    margin-top: 30px;
+}
+
+footer {
+    text-align: center;
+    line-height: 0.5;
+    font-size: 14px;
+    margin: 30px;
+}
+

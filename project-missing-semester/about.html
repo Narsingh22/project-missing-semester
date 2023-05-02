@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="./images/favicon-16x16.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&family=Ysabeau:ital,wght@1,100&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&family=Source+Sans+Pro:wght@400;600;700&family=Ysabeau:ital,wght@1,100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="about.css">
+    <title>Why we are teaching this class - Missing Semester</title>
+</head>
+<body>
+    <header>
+        <nav>
+          <ul>
+            <li><a href="missingSem.html">./missing-semester</a></li>
+            <li><a href="lectures.html">lecture</a></li>
+            <li><a href="about.html">about</a></li>
+          </ul>
+        </nav>
+    </header>
+
+    <main>
+      <h1>Why we are teaching this class</h1>
+      <p>During a traditional Computer Science education, chances are you will take plenty of classes that teach you advanced topics within CS, everything from Operating Systems to Programming Languages to Machine Learning. But at many institutions there is one essential topic that is rarely covered and is instead left for students to pick up on their own: computing ecosystem literacy.</p>
+      <p>Over the years, we have helped teach several classes at MIT, and over and over we have seen that many students have limited knowledge of the tools available to them. Computers were built to automate manual tasks, yet students often perform repetitive tasks by hand or fail to take full advantage of powerful tools such as version control and text editors. In the best case, this results in inefficiencies and wasted time; in the worst case, it results in issues like data loss or inability to complete certain tasks.</p>
+      <p>These topics are not taught as part of the university curriculum: students are never shown how to use these tools, or at least not how to use them efficiently, and thus waste time and effort on tasks that should be simple. The standard CS curriculum is missing critical topics about the computing ecosystem that could make students’ lives significantly easier.</p>
+
+      <h2>The missing semester of your CS education</h2>
+      <p>To help remedy this, we are running a class that covers all the topics we consider crucial to be an effective computer scientist and programmer. The class is pragmatic and practical, and it provides hands-on introduction to tools and techniques that you can immediately apply in a wide variety of situations you will encounter. The class is being run during MIT’s “Independent Activities Period” in January 2020 — a one-month semester that features shorter student-run classes. While the lectures themselves are only available to MIT students, we will provide all lecture materials along with video recordings of lectures to the public.</p>
+      <p>If this sounds like it might be for you, here are some concrete examples of what the class will teach:</p>
+
+      <section id="command-shell">
+      <h3>Command shell</h3>
+      <p>How to automate common and repetitive tasks with aliases, scripts, and build systems. No more copy-pasting commands from a text document. No more “run these 15 commands one after the other”. No more “you forgot to run this thing” or “you forgot to pass this argument”.</p>
+      <p>For example, searching through your history quickly can be a huge time saver. In the example below we show several tricks related to navigating your shell history for <span>convert</span> commands.
+      </p>
+      <video src="./videos/vdo1.mp4" autoplay="autoplay" loop="loop" controls="" muted="" playsinline=""></video>
+      </section>
+
+      <section id="version-control">
+      <h3>Version control</h3>
+      <p>How to use version control properly, and take advantage of it to save you from disaster, collaborate with others, and quickly find and isolate problematic changes. No more <span>rm -rf; git clone</span>. No more merge conflicts (well, fewer of them at least). No more huge blocks of commented-out code. No more fretting over how to find what broke your code. No more “oh no, did we delete the working code?!”. We’ll even teach you how to contribute to other people’s projects with pull requests!</p>
+      <p>In the example below we use <span>git bisect</span> to find which commit broke a unit test and then we fix it with <span>git revert</span>.</p>
+      <video src="./videos/vdo2.mp4" autoplay="autoplay" loop="loop" controls="" muted="" playsinline=""></video>
+      </section>
+
+      <section id="text-editing">
+        <p>How to efficiently edit files from the command-line, both locally and remotely, and take advantage of advanced editor features. No more copying files back and forth. No more repetitive file editing.</p>
+        <p>Vim macros are one of its best features, in the example below we quickly convert an html table to csv format using a nested vim macro.</p>
+        <video src="./videos/vdo3.mp4" autoplay="autoplay" loop="loop" controls="" muted="" playsinline=""></video>
+      </section>
+
+      <section id="remote-machines">
+        <h3>Remote maachines</h3>
+        <p>How to stay sane when working with remote machines using SSH keys and terminal multiplexing. No more keeping many terminals open just to run two commands at once. No more typing your password every time you connect. No more losing everything just because your Internet disconnected or you had to reboot your laptop.</p>
+        <p>In the example below we use <span>tmux</span> to keep sessions alive in remote servers and <span>mosh</span> to support network roaming and disconnection.</p>
+        <video src="./videos/vdo3.mp4" autoplay="autoplay" loop="loop" controls="" muted="" playsinline=""></video>
+      </section>
+
+      <section id="finding-files">
+        <h3>Finding files</h3>
+        <p>How to quickly find files that you are looking for. No more clicking through files in your project until you find the one that has the code you want.</p>
+        <p>In the example below we quickly look for files with <span>fd</span> and for code snippets with <span>rg</span>. We also quickly <span>cd</span> and <span>vim</span> recent/frequent files/folder using <span>fasd</span>.</p>
+      </section>
+
+      <section id="data-wrangling">
+        <h3>Data wrangling</h3>
+        <p>How to quickly and easily modify, view, parse, plot, and compute over data and files directly from the command-line. No more copy pasting from log files. No more manually computing statistics over data. No more spreadsheet plotting.</p>
+      </section>
+
+      <section id="virtual-machines">
+        <h3>Virtual machines</h3>
+        <p>How to use virtual machines to try out new operating systems, isolate unrelated projects, and keep your main machine clean and tidy. No more accidentally corrupting your computer while doing a security lab. No more millions of randomly installed packages with differing versions.</p>
+      </section>
+
+      <section id="security">
+        <h3>Security</h3>
+        <p>How to be on the Internet without immediately revealing all of your secrets to the world. No more coming up with passwords that match the insane criteria yourself. No more unsecured, open WiFi networks. No more unencrypted messaging.</p>
+      </section>
+
+      <section id="conclusion">
+        <h2>Conclusion</h2>
+        <p>This, and more, will be covered across the 12 class lectures, each including an exercise for you to get more familiar with the tools on your own. If you can’t wait for January, you can also take a look at the lectures from <a href="#">Hacker Tools</a>, which we ran during IAP last year. It is the precursor to this class, and covers many of the same topics.</p>
+        <p>We hope to see you in January, whether virtually or in person!</p>
+
+        <p>Happy hacking,<br>
+        Anish, Jose, and Jon</p>
+      </section>
+
+      <hr>
+    </main>
+
+    <footer>
+      <a href="#">Edit this page</a>
+      <p>Licensed under <a href="#">CC BY-NC-SA</a>.</p>
+    </footer>
+</body>
+</html>
